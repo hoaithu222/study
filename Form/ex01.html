@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="ex01.css">
+</head>
+
+<body>
+    <div class="box-login">
+        <div class="container">
+            <div class="inner-wrap">
+
+                <div class="inner-form">
+                    <div class="inner-image">
+                        <img src="../Form/image/photo-login.png" alt="" />
+                    </div>
+                    <form>
+                        <h2 class="inner-title">
+                            Sign In
+                        </h2>
+                        <div class="input">
+                            <input type="text" name="text" required />
+                            <label>Please enter your student code</label>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="password" required />
+                            <label>Password</label>
+                            <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+                        </div>
+                        <div class="error-message" id="error-message">Please enter your password</div>
+                        <div class="button">
+                            <button class="btn" type="submit">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ex01.js"></script>
+</body>
+
+</html>
