@@ -113,69 +113,69 @@
 //     console.log(dataB);
 //   });
 
-// const getUser = (userId) => {
-//   const users = [
-//     {
-//       id: 1,
-//       name: "User 1",
-//       salary: 1000,
-//     },
-//     {
-//       id: 2,
-//       name: "User 2",
-//       salary: 2000,
-//     },
-//     {
-//       id: 3,
-//       name: "User 3",
-//       salary: 3000,
-//     },
-//     {
-//       id: 4,
-//       name: "User 4",
-//       salary: 4000,
-//     },
-//   ];
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       const user = users.find(({ id }) => userId === id);
-//       resolve(user);
-//     }, 1000);
-//   });
-// };
-// const ids = [1, 3, 4];
+const getUser = (userId) => {
+  const users = [
+    {
+      id: 1,
+      name: "User 1",
+      salary: 1000,
+    },
+    {
+      id: 2,
+      name: "User 2",
+      salary: 2000,
+    },
+    {
+      id: 3,
+      name: "User 3",
+      salary: 3000,
+    },
+    {
+      id: 4,
+      name: "User 4",
+      salary: 4000,
+    },
+  ];
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const user = users.find(({ id }) => userId === id);
+      resolve(user);
+    }, 1000);
+  });
+};
+const ids = [1, 3, 4];
 
-// let sum = 0;
-// let completed = 0;
+let sum = 0;
+let completed = 0;
 
-// ids.forEach(function (id) {
-//   getUser(id).then((data) => {
-//     sum += data.salary;
-//     completed += 1;
-//     if (completed === ids.length) {
-//       console.log(sum);
-//     }
-//   });
-// });
+ids.forEach(function (id) {
+  getUser(id).then((data) => {
+    sum += data.salary;
+    completed += 1;
+    if (completed === ids.length) {
+      console.log(sum);
+    }
+  });
+});
 
-// const getTotal = () => {
-//   let total = 0;
-//   for (var i = 0; i < ids.length; i++) {
-//     const id = ids[i];
-//     const isLast = i === ids.length - 1;
-//     const promise = getUser(id).then((data) => {
-//       const salary = data.salary;
-//       total += salary;
-//       return total;
-//     });
-//     if (isLast) {
-//       return promise;
-//     }
-//   }
-// };
-// getTotal().then((data) => {
-//   console.log(data);
-// });
+const getTotal = () => {
+  let total = 0;
+  for (var i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    const isLast = i === ids.length - 1;
+    const promise = getUser(id).then((data) => {
+      const salary = data.salary;
+      total += salary;
+      return total;
+    });
+    if (isLast) {
+      return promise;
+    }
+  }
+};
+getTotal().then((data) => {
+  console.log(data);
+});
 
 // getUser(1).then((data) => {
 //   console.log(data);
