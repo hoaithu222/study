@@ -7,7 +7,7 @@ const PowerPointSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const changeSlide = (index) => {
+  const changeSlide = (index: number) => {
     if (isAnimating || index === currentSlide) return;
     setIsAnimating(true);
     setCurrentSlide(index);
