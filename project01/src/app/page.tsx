@@ -1,4 +1,4 @@
-import PowerPointSlider from "@/Components/powerpoint-slider";
+import PowerPointSlider from "@/app/Components/powerpoint-slider";
 import React from "react";
 
 export default function HomePage() {
