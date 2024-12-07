@@ -1,4 +1,4 @@
-import { Brain, Code, Settings, Share2, Rocket, Heart, Image, Book, Users, Trophy, Target, Clock, Shield, Leaf, Zap, Star, Layout, Lock, Lightbulb, Phone } from 'lucide-react';
+import { Brain, Code, Settings, Share2, Rocket, Heart, Image, Users, Trophy, Target, Shield, Zap, Star, Layout, } from 'lucide-react';
 
 export const slides = [
   {
