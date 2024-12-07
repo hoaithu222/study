@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header .menu ul li {
+    position: relative;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header .menu ul li a:hover,
+header .menu ul li a.active {
+    color: #24c8da;
+    border-bottom: 2px solid #24c8da;
+}
+
+main {
+    background-color: rgb(222, 225, 223);
+    padding: 100px;
+}
+
+footer {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Submenu hidden by default */
+.menu_sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Hidden initially */
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.menu_sub li a {
+    padding: 10px 0;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu_sub li a:hover {
+    color: #24c8da;
+}
+
+/* Show submenu on hover */
+header .menu ul li:hover .menu_sub {
+    display: flex;
+}

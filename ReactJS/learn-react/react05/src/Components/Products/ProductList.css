@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+}
+
+.product-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.product-list ul .item {
+    width: calc(100% / 3 - 60px);
+    background-color: rgb(113, 163, 163);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.product-list ul .item .product-price {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(237, 101, 51);
+}
+
+.product-list ul .item button {
+    background-color: olivedrab;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin: 30px;
+    cursor: pointer;
+}

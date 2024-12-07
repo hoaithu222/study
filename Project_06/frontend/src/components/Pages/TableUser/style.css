@@ -1,0 +1,173 @@
+.open_form {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.open_form:hover {
+    background-color: #218838;
+}
+
+.add_user {
+    margin-top: 100px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    max-width: 500px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.add_user label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.add_user input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.add_user input:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.btn_add {
+    width: 48%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 4%;
+}
+
+.btn_add:hover {
+    background-color: #218838;
+}
+
+.btn_cancel {
+    width: 48%;
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_cancel:hover {
+    background-color: #c82333;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.form_title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input {
+    margin-bottom: 16px;
+}
+
+/* table */
+.table-user {
+    width: 100%;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+}
+
+.ID,
+.name,
+.address,
+.phone,
+.handle {
+    width: 20%;
+}
+
+.btn_add,
+.btn_cancel {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn_cancel {
+    background-color: #f44336;
+}
+
+.btn_add:hover,
+.btn_cancel:hover {
+    opacity: 0.8;
+}
+
+/*  end table */
